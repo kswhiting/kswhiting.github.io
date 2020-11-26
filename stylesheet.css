@@ -1,0 +1,184 @@
+body {
+    margin-left: 250px;
+    margin-right: 250px;
+    font-family: 'Nunito', serif;
+    color: #121314;
+    background-color: #F9F9FF;
+    font-size: 1rem;
+    margin-top:0;
+    margin-bottom: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin:0px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin:0px;
+
+}
+
+.heading-h2 {
+    
+opacity: 0;}
+
+.type-paragraph {
+opacity: 1;    transition: 0.3s ease-out;
+    transition-delay: 3.5s;
+
+}
+
+
+.not-scrolled-nav {
+    padding-top: 25px;
+    margin: 0px;
+    color:#F9F9FF;
+    width: 100vw;
+    margin-left: -250px;
+}
+
+.scrolled-nav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0px;
+    color:#121314;
+    background-color: #F9F9FF;
+    width: 100vw;
+    margin-left: -250px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    transition: ease 0.2s;
+}
+
+.nav-items {
+    float: inline-end;
+    float: right;
+    padding-right:250px;
+    
+}
+
+.nav-item {
+    padding:0px 20px 0px 20px;
+    font-weight: 600;
+}
+
+.nav-item-left {
+    float: left;
+    padding-left:230px;
+font-weight: 900;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+header{
+    height:100vh;
+    margin: 0;
+    color: #F9F9FF;
+    z-index: 1;
+}
+
+
+.img-container {
+    position: absolute;
+    z-index: -1;
+    top:0px;
+    left:0px;
+    height:100vh;
+    width:100vw;
+    overflow: hidden;
+    
+}
+
+.header-image {
+    top:0;
+    position:absolute;
+    height: 1200px;
+    width: 2000px;
+    filter: brightness(30%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-content {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.logo {
+    width:250px;
+    height: 250px;
+    margin-right: 100px;
+    opacity: 0;
+}
+
+.show-logo {
+    opacity: 1;
+    transition: 0.3s ease-out;
+    transition-delay: 3.5s;
+    
+    }
+
+.arrow-svg {
+    position: absolute;
+	top:100vh;
+	bottom: 80px;
+	left: 0;
+	right: 0;
+    opacity: 0;
+    margin: auto;
+    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    cursor: pointer;
+}
+
+.show-arrow {
+    opacity: 1;
+    transition: 0.3s ease-out;
+    transition-delay: 5s;
+}
+
+
+@keyframes bounce {
+    50% {
+        transform: translateY(-7px);
+      }
+    }
+
+
+@media only screen and (max-width: 1300px) {
+    body {
+        margin-left: 100px;
+    margin-right: 100px;
+    }
+
+    .not-scrolled-nav {
+        margin-left: -100px;
+    }
+
+    .scrolled-nav {
+        margin-left: -100px;
+    }
+  }
+
+@media only screen and (max-width: 900px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  
