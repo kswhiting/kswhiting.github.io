@@ -4,6 +4,8 @@ $(document).ready(function(){
     $('.arrow-svg').addClass('show-arrow');
 });
 
+var darkBackgroundDetect = document.querySelector('dark-background-detect');
+
 
 $(window).scroll(function () {
 
@@ -17,6 +19,11 @@ $(window).scroll(function () {
     } else {
         $("nav").removeClass("scrolled-nav");
         $("nav").addClass("not-scrolled-nav");
+    }
+
+    
+    if(someElement.getBoundingClientRect().bottom <= 0){
+        $("body").addClass("dark-body");
     }
 
     $(".header-image").css("top", "0" + (scroll / 1.8) + "px");

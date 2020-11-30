@@ -52,10 +52,20 @@ h4 {
     color: #F9F9FF;
 }
 
+footer {
+    color: #F9F9FF;
+    widthL
+}
+
 button {
 display: block;
 margin-left: auto;
 margin-right: auto;
+padding: 25px 50px;
+border: 1 px solid #F9F9FF;
+background: none;
+margin-top:50px;
+border-radius:50px;
 }
 
 .heading-h2 {
