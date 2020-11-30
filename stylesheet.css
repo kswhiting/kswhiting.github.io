@@ -1,6 +1,4 @@
 body {
-    margin-left: 250px;
-    margin-right: 250px;
     font-family: 'Nunito', serif;
     color: #121314;
     background-color: #F9F9FF;
@@ -8,19 +6,56 @@ body {
     margin-top:0;
     margin-bottom: 0;
     overflow-x: hidden;
+    
+}
+
+.site {
+    max-width: 70vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 900;
     margin:0px;
+    text-align: center;
+}
+
+.header-heading, .heading-h2 {
+    text-align: left !important;
 }
 
 h2 {
     font-size: 1.5rem;
     font-weight: 300;
     margin:0px;
+    text-align: center;
 
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin:0px;
+    text-align: center;
+    color: #F9F9FF;
+
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin:0px;
+    text-align: center;
+    color: #F9F9FF;
+}
+
+button {
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
 .heading-h2 {
@@ -33,13 +68,17 @@ opacity: 1;    transition: 0.3s ease-out;
 
 }
 
+#navbar {
+    margin-left:-8px;
+    z-index: 10;
+}
+
 
 .not-scrolled-nav {
     padding-top: 25px;
     margin: 0px;
     color:#F9F9FF;
     width: 100vw;
-    margin-left: -250px;
 }
 
 .scrolled-nav {
@@ -49,16 +88,21 @@ opacity: 1;    transition: 0.3s ease-out;
     color:#121314;
     background-color: #F9F9FF;
     width: 100vw;
-    margin-left: -250px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     transition: ease 0.2s;
 }
 
-.nav-items {
+.nav-items-right {
     float: inline-end;
     float: right;
-    padding-right:250px;
     
+}
+
+.nav-items {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    max-width: 70vw;
 }
 
 .nav-item {
@@ -68,7 +112,6 @@ opacity: 1;    transition: 0.3s ease-out;
 
 .nav-item-left {
     float: left;
-    padding-left:250px;
 font-weight: 900;
 }
 
@@ -100,8 +143,8 @@ header{
 .header-image {
     top:0;
     position:absolute;
-    height: 1200px;
-    width: 2000px;
+    height: 120vh;
+    width: 100vw;
     filter: brightness(30%);
     background-attachment: fixed;
     background-position: center;
@@ -110,14 +153,20 @@ header{
 }
 
 .header-content {
-    max-width: 1000px;
+    max-width: 2000px;
     display: flex;
     flex-direction: row;
     margin: 0;
+    margin-right: auto;
+    margin-left: auto;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.header-text {
+    max-width: 500px;
 }
 
 .logo {
@@ -153,7 +202,26 @@ header{
     transition-delay: 5s;
 }
 
+.portfolio-item-container {
+    width:100%;
+    background-color: #121314;
+    margin: 0;
+    padding-top: 50px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
 
+.portfolio-svg {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 170px;
+
+}
 @keyframes bounce {
     50% {
         transform: translateY(-7px);
@@ -161,20 +229,18 @@ header{
     }
 
 
-@media only screen and (max-width: 1300px) {
-    body {
-        margin-left: 100px;
-    margin-right: 100px;
+    /* for screens larger than 2000 px wide */
+@media only screen and (min-width: 2200px) {
+    .site {
+        max-width: 1600px;
     }
 
-    .not-scrolled-nav {
-        margin-left: -100px;
+    .nav-items {
+        max-width: 1600px;
     }
+}
 
-    .scrolled-nav {
-        margin-left: -100px;
-    }
-  }
+    /* for screens smaller than 900 px wide */
 
 @media only screen and (max-width: 900px) {
     body {

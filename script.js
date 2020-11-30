@@ -37,7 +37,7 @@ window.onscroll = function () { stickyNav() };
     }
 
 
-var string = "Hey! I'm Kyle, an aspiring developer."; /* type your text here */
+var string = "Hey! I'm Kyle, an aspiring developer.";
 var array = string.split("");
 var timer;
 
@@ -47,7 +47,7 @@ function frameLooper () {
 	} else {
 		clearTimeout(timer);
 			}
-    loopTimer = setTimeout('frameLooper()',70); /* change 70 for speed */
+    loopTimer = setTimeout('frameLooper()',70);
 }
 frameLooper();
 
