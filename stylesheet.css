@@ -1,12 +1,21 @@
 body {
     font-family: 'Nunito', serif;
-    color: #121314;
-    background-color: #F9F9FF;
+    transition: ease 0.2s;
     font-size: 1rem;
     margin-top:0;
     margin-bottom: 0;
     overflow-x: hidden;
     
+}
+
+.light-theme {
+    color: #121314;
+    background-color: #F9F9FF;
+}
+
+.dark-theme{
+    background-color: #121314;
+    color: #F9F9FF;
 }
 
 .site {
@@ -53,9 +62,30 @@ h4 {
 }
 
 button {
+    font-weight: 100;
 display: block;
 margin-left: auto;
 margin-right: auto;
+padding: 25px 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+
+}
+
+a {text-decoration: none;}
+
+.light-button-theme {
+    background:none;
+    border: 2px solid #121314;
+}
+
+.dark-button-theme {
+    color:#121314;
+    background:#F9F9FF;
+    border: 2px solid #F9F9FF;
 }
 
 .heading-h2 {
@@ -85,11 +115,19 @@ opacity: 1;    transition: 0.3s ease-out;
     padding-top: 25px;
     padding-bottom: 25px;
     margin: 0px;
-    color:#121314;
-    background-color: #F9F9FF;
     width: 100vw;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     transition: ease 0.2s;
+}
+
+.light-nav-theme {
+    background-color:#F9F9FF;
+    color: #121314;
+}
+
+.dark-nav-theme {
+    color:#F9F9FF;
+    background-color: #121314;
+
 }
 
 .nav-items-right {
@@ -209,6 +247,7 @@ header{
     padding-top: 50px;
     border-radius: 20px;
     margin-bottom: 100px;
+    cursor: pointer;
 }
 
 .portfolio-svg {
@@ -222,6 +261,27 @@ header{
     padding-bottom: 170px;
 
 }
+
+
+.social-footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50px;
+    height:50px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.light-svg-theme {
+    fill: #121314;
+}
+
+.dark-svg-theme {
+    fill: #F9F9FF;
+
+}
+
 @keyframes bounce {
     50% {
         transform: translateY(-7px);
