@@ -76,4 +76,3 @@ function frameLooper () {
     loopTimer = setTimeout('frameLooper()',50);
 }
 frameLooper();
-

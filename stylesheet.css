@@ -256,7 +256,7 @@ header{
     border-radius: 20px;
     margin-bottom: 100px;
     cursor: pointer;
-    transition: ease-in-out 0.4s;
+    transition: ease-in-out 0.3s;
     position: relative
 }
 
@@ -273,6 +273,10 @@ header{
     transform: translateY(-15px); 
 }
 
+.portfolio-item-container:hover .portfolio-image {
+    transform: translateY(-15px); 
+}
+
 .portfolio-svg {
     width: 70%;
     height: auto;
@@ -283,18 +287,22 @@ header{
     margin-top: 50px;
     margin-bottom: 50px;
     padding-bottom: 170px;
-    transition: ease-in-out 0.4s;
-z-index: 0;
+    transition: ease-in-out 0.3s;
+    position: relative;
 }
 
 .portfolio-image {
-    margin-top: 50px;
     width: 68%;
     height: auto;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
-    z-index: 333;
+    left: 0;
+right: 0;
+margin: auto;
+margin-top: 50px;
+padding-bottom: 200px;
+    transition: ease-in-out 0.3s;
+    border-radius: 20px;
+
 }
 
 
